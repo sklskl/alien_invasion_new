@@ -31,8 +31,13 @@ class AlienInvasion:
 
     def _check_events(self):
         for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                sys.exit()
+            if event.type == pygame.get():
+                if event.type == pygame.QUIT:
+                    sys.exit()
+                elif event.type == pygame.KEYDOWN:
+                    if event.type == pygame.K_RIGHT:
+                        # 右移
+                        self.ship.rect.x += 1
 
 
 if __name__ == 'main':
