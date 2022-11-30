@@ -14,9 +14,12 @@ class Ship:
 
         # 移动标志
         self.moving_right = False
+        self.moving_left = False
 
     def update(self):
         if self.moving_right:
+            self.rect += 1
+        if self.moving_left:
             self.rect += 1
 
     def blitme(self):
