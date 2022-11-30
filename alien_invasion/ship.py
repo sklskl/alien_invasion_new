@@ -14,7 +14,7 @@ class Ship:
 
         # 移动标志
         self.moving_right = False
-        self.moving_left = True
+        self.moving_left = False
 
     def update(self):
         if self.moving_right:
